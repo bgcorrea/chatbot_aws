@@ -1,0 +1,358 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": [
+                "hola",
+                "qué tal",
+                "cómo estás",
+                "saludos"
+            ],
+            "responses": [
+                "¡Hola!",
+                "¡Buenos días!",
+                "¿Cómo estás?",
+                "Hola, ¿en qué puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "tipos_instancia",
+            "patterns": [
+                "qué tipos de instancia ec2 existen",
+                "tipos de instancia",
+                "instancias ec2"
+            ],
+            "responses": [
+                "Existen varios tipos de instancias EC2 que varían en capacidad de CPU, memoria, almacenamiento y red. Algunos ejemplos incluyen T3, M5, C5, y más. ¿Hay algún tipo específico que te interese?"
+            ]
+            },
+            {
+            "tag": "ayuda_general",
+            "patterns": [
+                "qué cosas me puedes ayudar",
+                "puedes ayudarme con algo"
+            ],
+            "responses": [
+                "Puedo proporcionarte información sobre los precios de las instancias EC2, recomendaciones de tipo de instancia, configuraciones de seguridad, y más. ¿Hay algo específico en lo que necesitas ayuda?"
+            ]
+            },
+            {
+            "tag": "default",
+            "patterns": [],  
+            "responses": [
+                "Lo siento, no entendí tu pregunta. ¿Podrías ser más específico?"
+            ]
+        },
+        {
+            "tag": "nombre",
+            "patterns": [
+                "cómo es tu nombre",
+                "cómo te llamas"
+            ],
+            "responses": [
+                "Me llamo AWS Cost Advisor ChatBot.",
+                "Mi nombre es WS Cost Advisor ChatBot."
+            ]
+        },
+        {
+            "tag": "T4G Nano",
+            "patterns": [
+                "T4G Nano",
+                "t4g.nano"
+            ],
+            "responses": [
+                "La T4G Nano tiene 0.5 GiB de memoria y 2 vCPUs. Su costo es de $0.0042 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T3A Nano",
+            "patterns": [
+                "T3A Nano",
+                "t3a.nano"
+            ],
+            "responses": [
+                "La T3A Nano ofrece 0.5 GiB de memoria y 2 vCPUs. El precio es de $0.0047 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T3 Nano",
+            "patterns": [
+                "T3 Nano",
+                "t3.nano"
+            ],
+            "responses": [
+                "La T3 Nano tiene 0.5 GiB de memoria y 2 vCPUs. Su costo es de $0.0052 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T2 Nano",
+            "patterns": [
+                "T2 Nano",
+                "t2.nano"
+            ],
+            "responses": [
+                "La T2 Nano ofrece 0.5 GiB de memoria y 1 vCPU. El precio es de $0.0058 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T4G Micro",
+            "patterns": [
+                "T4G Micro",
+                "t4g.micro"
+            ],
+            "responses": [
+                "La T4G Micro tiene 1.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0084 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T3A Micro",
+            "patterns": [
+                "T3A Micro",
+                "t3a.micro"
+            ],
+            "responses": [
+                "La T3A Micro ofrece 1.0 GiB de memoria y 2 vCPUs. El precio es de $0.0094 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T3 Micro",
+            "patterns": [
+                "T3 Micro",
+                "t3.micro"
+            ],
+            "responses": [
+                "La T3 Micro tiene 1.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0104 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T2 Micro",
+            "patterns": [
+                "T2 Micro",
+                "t2.micro"
+            ],
+            "responses": [
+                "La T2 Micro ofrece 1.0 GiB de memoria y 1 vCPU. El precio es de $0.0116 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T4G Small",
+            "patterns": [
+                "T4G Small",
+                "t4g.small"
+            ],
+            "responses": [
+                "La T4G Small tiene 2.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0168 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T3A Small",
+            "patterns": [
+                "T3A Small",
+                "t3a.small"
+            ],
+            "responses": [
+                "La T3A Small ofrece 2.0 GiB de memoria y 2 vCPUs. El precio es de $0.0188 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T3 Small",
+            "patterns": [
+                "T3 Small",
+                "t3.small"
+            ],
+            "responses": [
+                "La T3 Small tiene 2.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0208 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "T2 Small",
+            "patterns": [
+                "T2 Small",
+                "t2.small"
+            ],
+            "responses": [
+                "La T2 Small ofrece 2.0 GiB de memoria y 1 vCPU. El precio es de $0.0230 por hora para Linux On Demand."
+            ]
+        },
+        {
+            "tag": "R6G Medium",
+            "patterns": [
+                "R6G Medium",
+                "r6g.medium"
+            ],
+            "responses": [
+                "La R6G Medium tiene 8.0 GiB de memoria y 1 vCPU. Su costo es de $0.0504 por hora para Linux On Demand, $0.0318 por hora para Linux Reserved, $0.0209 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "A1 Large",
+            "patterns": [
+                "A1 Large",
+                "a1.large"
+            ],
+            "responses": [
+                "La A1 Large tiene 4.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0510 por hora para Linux On Demand, $0.0321 por hora para Linux Reserved, $0.0297 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "C7A Medium",
+            "patterns": [
+                "C7A Medium",
+                "c7a.medium"
+            ],
+            "responses": [
+                "La C7A Medium tiene 2.0 GiB de memoria y 1 vCPU. Su costo es de $0.0513 por hora para Linux On Demand, $0.0340 por hora para Linux Reserved, $0.0143 por hora para Linux Spot Minimum, $0.0973 por hora para Windows On Demand, $0.0799 por hora para Windows Reserved."
+            ]
+        },
+        {
+            "tag": "M7GD Medium",
+            "patterns": [
+                "M7GD Medium",
+                "m7gd.medium"
+            ],
+            "responses": [
+                "La M7GD Medium tiene 4.0 GiB de memoria y 1 vCPU. Su costo es de $0.0534 por hora para Linux On Demand, $0.0336 por hora para Linux Reserved, $0.0213 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "R7G Medium",
+            "patterns": [
+                "R7G Medium",
+                "r7g.medium"
+            ],
+            "responses": [
+                "La R7G Medium tiene 8.0 GiB de memoria y 1 vCPU. Su costo es de $0.0536 por hora para Linux On Demand, $0.0354 por hora para Linux Reserved, $0.0232 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "R6GD Medium",
+            "patterns": [
+                "R6GD Medium",
+                "r6gd.medium"
+            ],
+            "responses": [
+                "La R6GD Medium tiene 8.0 GiB de memoria y 1 vCPU. Su costo es de $0.0576 por hora para Linux On Demand, $0.0363 por hora para Linux Reserved, $0.0287 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "M7A Medium",
+            "patterns": [
+                "M7A Medium",
+                "m7a.medium"
+            ],
+            "responses": [
+                "La M7A Medium tiene 4.0 GiB de memoria y 1 vCPU. Su costo es de $0.0580 por hora para Linux On Demand, $0.0383 por hora para Linux Reserved, $0.0236 por hora para Linux Spot Minimum, $0.1040 por hora para Windows On Demand, $0.0843 por hora para Windows Reserved."
+            ]
+        },
+        {
+            "tag": "C7GN Medium",
+            "patterns": [
+                "C7GN Medium",
+                "c7gn.medium"
+            ],
+            "responses": [
+                "La C7GN Medium tiene 2.0 GiB de memoria y 1 vCPU. Su costo es de $0.0624 por hora para Linux On Demand, $0.0393 por hora para Linux Reserved, $0.0236 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "M3 General Purpose Medium",
+            "patterns": [
+                "M3 General Purpose Medium",
+                "m3.medium"
+            ],
+            "responses": [
+                "La M3 General Purpose Medium tiene 3.75 GiB de memoria y 1 vCPU. Su costo es de $0.0670 por hora para Linux On Demand, $0.0480 por hora para Linux Reserved, $0.0278 por hora para Linux Spot Minimum, $0.1300 por hora para Windows On Demand, $0.1000 por hora para Windows Reserved."
+            ]
+        },
+        {
+            "tag": "T4G Large",
+            "patterns": [
+                "T4G Large",
+                "t4g.large"
+            ],
+            "responses": [
+                "La T4G Large tiene 8.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0672 por hora para Linux On Demand, $0.0421 por hora para Linux Reserved, $0.0282 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "R7GD Medium",
+            "patterns": [
+                "R7GD Medium",
+                "r7gd.medium"
+            ],
+            "responses": [
+                "La R7GD Medium tiene 8.0 GiB de memoria y 1 vCPU. Su costo es de $0.0680 por hora para Linux On Demand, $0.0428 por hora para Linux Reserved, $0.0312 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "C6G Large",
+            "patterns": [
+                "C6G Large",
+                "c6g.large"
+            ],
+            "responses": [
+                "La C6G Large tiene 4.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0680 por hora para Linux On Demand, $0.0428 por hora para Linux Reserved, $0.0311 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "C7G Large",
+            "patterns": [
+                "C7G Large",
+                "c7g.large"
+            ],
+            "responses": [
+                "La C7G Large tiene 4.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0725 por hora para Linux On Demand, $0.0478 por hora para Linux Reserved, $0.0330 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "T3A Large",
+            "patterns": [
+                "T3A Large",
+                "t3a.large"
+            ],
+            "responses": [
+                "La T3A Large tiene 8.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0752 por hora para Linux On Demand, $0.0471 por hora para Linux Reserved, $0.0321 por hora para Linux Spot Minimum, $0.1028 por hora para Windows On Demand, $0.0747 por hora para Windows Reserved."
+            ]
+        },
+        {
+            "tag": "R7A Medium",
+            "patterns": [
+                "R7A Medium",
+                "r7a.medium"
+            ],
+            "responses": [
+                "La R7A Medium tiene 8.0 GiB de memoria y 1 vCPU. Su costo es de $0.0761 por hora para Linux On Demand, $0.0503 por hora para Linux Reserved, $0.0366 por hora para Linux Spot Minimum, $0.1221 por hora para Windows On Demand, $0.0963 por hora para Windows Reserved."
+            ]
+        },
+        {
+            "tag": "C6A Large",
+            "patterns": [
+                "C6A Large",
+                "c6a.large"
+            ],
+            "responses": [
+                "La C6A Large tiene 4.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0765 por hora para Linux On Demand, $0.0506 por hora para Linux Reserved, $0.0373 por hora para Linux Spot Minimum, $0.1685 por hora para Windows On Demand, $0.1426 por hora para Windows Reserved."
+            ]
+        },
+        {
+            "tag": "C6GD Large",
+            "patterns": [
+                "C6GD Large",
+                "c6gd.large"
+            ],
+            "responses": [
+                "La C6GD Large tiene 4.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0768 por hora para Linux On Demand, $0.0484 por hora para Linux Reserved, $0.0322 por hora para Linux Spot Minimum."
+            ]
+        },
+        {
+            "tag": "M6G Large",
+            "patterns": [
+                "M6G Large",
+                "m6g.large"
+            ],
+            "responses": [
+                "La M6G Large tiene 8.0 GiB de memoria y 2 vCPUs. Su costo es de $0.0770 por hora para Linux On Demand, $0.0491 por hora para Linux Reserved, $0.0334 por hora para Linux Spot Minimum."
+            ]
+        }
+    ]
+}
